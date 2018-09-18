@@ -1,9 +1,8 @@
 // @flow
 import scroll from 'scroll';
 import scrollDoc from 'scroll-doc';
-import getScrollParent from 'scrollparent';
 
-export { getScrollParent };
+export const getScrollParent = () => document.scrollingElement || document.documentElement;
 
 /**
  * Find the bounding client rect
